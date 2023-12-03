@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .open_model,
+    .close_model {
+        font-family: inherit;
+        background-color: rgb(66, 194, 253);
+        border: none;
+        color: white;
+        border-radius: 10px;
+        font-size: 20px;
+        padding: 1rem 2rem;
+        cursor: pointer;
+        transition: 500ms;
+    }
+
+    .open_model:hover,
+    .close_model:hover {
+        background-color: violet;
+    }
+
+    .model {
+        background-color: aliceblue;
+        width: 500px;
+        box-shadow: 0.5rem 1rem 0.5rem rgba(0, 0, 0.5, 0.125);
+        border: none;
+        border-radius: 20px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        z-index: 100;
+        transform: translate(-50%, -50%);
+    }
+
+    .model>h2 {
+        font-size: 30px;
+    }
+
+    .model>p {
+        opacity: 0.75;
+    }
+
+    .hidden {
+        display: none;
+    }
+</style>
+
+<body>
+    <!-- <div>
+        <h1 id="heading"> &ldquo;Bismillahir Rahmanir Rahim&rdquo;</h1>
+        <p class="para1">Recite or listen to the holy Quran everyday you'll feel peace.</p>
+        <p class="para1">To get rid of black magic recite or listen to Surah-Baqarah.</p>
+        <p class="para2">Surah-Fatiha is the surah of shifa.</p>
+        <p class="para2">Shaitan doesn't enter in that house in which Surah-Baqarah is recited everyday.</p>
+    </div>
+    <div class="container">
+        <h2 class="my_title"> &ldquo;Assalamualaikum Bangladesh&rdquo;</h2>
+    </div> -->
+    <!-- Open Button -->
+    <button class="open_model">Open Model</button>
+    <!-- Model -->
+    <div class="model hidden">
+        <h2>This is a model</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ducimus consequuntur cumque rem
+            exercitationem dicta suscipit facilis illo voluptatibus eveniet, repudiandae praesentium at aliquam rerum
+            soluta consectetur recusandae totam dolore!</p>
+        <!-- Close Button -->
+        <button class="close_model">Close Model</button>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
